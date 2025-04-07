@@ -30,5 +30,18 @@ Start/Modify a project in STM32 IoT node to read the sensor value, such as 3D Ac
 http sender example: https://github.com/iot2tangle/STM32_B-L475E-IOT01A/tree/main/http-senderLinks to an external site.   
   
 =================  
+  
+hw-lab3:  
+  
+====basic problem====    
+  
+Write a Python BLE program (BLE Central) in a Linux host (Raspberry Pi 3) to communicate with a test app, say BLE Tool,  in an Android phone.  
+  
+Your BLE program is required to demo some CCCD setting, such as setting the CCCD value of your App at the Android phone to 0x0002.   
+(Due to the limitations of  the "BLE Tool" app, the CCCD value might not be changed and viewed in the UI. It's OK to show the server log of the BLE Tool as a proof of your program.)  
+  
+The test program in your Android phone can be others, for example, BLE scanner App (by Bluepixel). iPhone probably has a similar app(By me: Lightblue can work).    
+  
+=================  
 
   
