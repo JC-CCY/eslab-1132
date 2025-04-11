@@ -37,18 +37,15 @@ print("Services...")
 for svc in dev.services:
     print(str(svc))
 
-try:
-    service = dev.getServiceByUUID(UUID(0x1813))
-    for ch in service.getCharacteristics():
-        print(str(ch))
-        cccd = ch.getDescriptors()[0].handle
-        print(cccd)
-
+service = dev.getServiceByUUID(UUID(0x1813))
+for ch in service.getCharacteristics():
+    cccd = ch.getDescriptors()[2].handle
     print("Enabling notifications (CCCD = 0x0002)...")
-    dev.writeCharacteristic(60, b"\x02\x00", withResponse=False)
+    dev.writeCharacteristic(cccd, b"\x01\x00", withResponse=False)
+    print("Successfully enable notification.")
 
-    print("CCCD successfully set to 0x0002.")
-
-finally:
-    dev.disconnect()
-    print("Disconnected.")
+while(1):
+    if dev.waitForNotification(5.0):
+        print("Successfully receive notification.")
+        continue
+    print("Waiting for notification.")
