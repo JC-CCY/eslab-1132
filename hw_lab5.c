@@ -122,20 +122,23 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  // 數字陣列
+  int numbers[] = {1, 3, 9, 4, 2, 1, 3, 8};
+  int num_index = 0;
+  int total_numbers = sizeof(numbers) / sizeof(numbers[0]);
+
   while (1)
   {
-      // 可變 duty cycle 的 PWM 控制
-      static int duty = 99999;      // 初始 10%
-      static int step = 100000;     // 每次增加或減少10%
+      // 計算 duty cycle：數字 × 10%
+      int value = numbers[num_index];
+      int duty = value * 100000;
 
-      TIM2->CCR1 = duty;            // 更新 PWM duty cycle
-      duty += step;
+      TIM2->CCR1 = duty;
 
-      if (duty >= 899999 || duty <= 99999)
-          step = -step;             // 到達上下限就反轉
-
-      HAL_Delay(100);               // 每100ms改變一次
+      num_index = (num_index + 1) % total_numbers;  // 循環
+      HAL_Delay(200);  // 每 500ms 傳送一個數字，可調整速度
   }
+
   /* USER CODE END 3 */
 }
 
