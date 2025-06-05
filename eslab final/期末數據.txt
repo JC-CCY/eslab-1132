@@ -1,0 +1,54 @@
+group 1(computing task,add task,20000):
+
+fixed frequency:
+
+80M Hz(MSI 16M Hz + PLL 10/2): 13 mAh, 24.064262 sec
+80M Hz(MSI  8M Hz + PLL 20/2): 13 mAh, 24.064262 sec
+
+64M Hz(MSI 16M Hz + PLL  8/2): 16 mAh, 30.117962 sec
+64M Hz(MSI  4M Hz + PLL 32/2): 16 mAh, 30.117962 sec
+
+60M Hz(MSI  4M Hz + PLL 30/2): 18 mAh, 32.141396 sec
+
+48M Hz(MSI 24M Hz + PLL  4/2): 22 mAh, 40.244011 sec
+48M Hz(MSI  4M Hz + PLL 24/2): 22 mAh, 40.244011 sec
+
+40M Hz(MSI  4M Hz + PLL 20/2): 26 mAh, 48.372345 sec
+
+24M Hz(MSI  4M Hz + PLL 12/2): 44 mAh, 81.150734 sec
+
+20M Hz(MSI  4M Hz + PLL 10/2): 52 mAh, 97.717468 sec
+
+16M Hz(MSI  1M Hz + PLL 32/2): 64 mAh, 122.791084 sec
+
+12M Hz(MSI  1M Hz + PLL 24/2): 85 mAh, 164.999161 sec
+
+ 8M Hz(MSI  1M Hz + PLL 16/2): 120 mAh, 251.640533 sec
+
+ 4M Hz(MSI  1M Hz + PLL  8/2): 209 mAh, 528.837036 sec
+
+group 2(I/O task,20000*3):
+
+fixed frequency:
+
+80M Hz(MSI  4M Hz + PLL 40/2): 11 mAh, 1.397126 sec
+60M Hz(MSI  4M Hz + PLL 30/2): 12 mAh, 22.275040 sec
+40M Hz(MSI  4M Hz + PLL 20/2): 12 mAh, 64.027603 sec
+20M Hz(MSI  4M Hz + PLL 10/2): 13 mAh, 189.344711 sec
+16M Hz(MSI  1M Hz + PLL 32/2): 14 mAh, 201.610275 sec
+12M Hz(MSI  1M Hz + PLL 24/2): 14 mAh, 211.127655 sec
+ 8M Hz(MSI  1M Hz + PLL 16/2): 16 mAh, 246.845993 sec
+ 4M Hz(MSI  1M Hz + PLL  8/2): 19 mAh, 323.674835 sec
+
+group 3(unknown task):
+
+fixed frequency:
+
+80M Hz(MSI  4M Hz + PLL 40/2): 4 mAh, 11.478118 sec
+60M Hz(MSI  4M Hz + PLL 30/2): 5 mAh, 67.051292 sec
+40M Hz(MSI  4M Hz + PLL 20/2): 6 mAh, 70.823860 sec
+20M Hz(MSI  4M Hz + PLL 10/2): 5 mAh, 82.174347 sec
+16M Hz(MSI  1M Hz + PLL 32/2): 6 mAh, 89.107452 sec 
+12M Hz(MSI  1M Hz + PLL 24/2): 7 mAh, 96.676445 sec 
+ 8M Hz(MSI  1M Hz + PLL 16/2): 6 mAh, 117.557503 sec 
+ 4M Hz(MSI  1M Hz + PLL  8/2): 9 mAh, 170.211975 sec 
