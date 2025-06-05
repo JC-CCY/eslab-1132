@@ -13,5 +13,3 @@ demo.mp4 : short demo for execution code and some result
 final.py : visualize the raw data using various types of charts
 
 final_project.c : original stm32 code for main.c
-
-=================
